@@ -1,0 +1,173 @@
+@mixin item-image-post($width, $height, $x, $y, $opacity: 0.8) {
+    width: $width;
+    height: $height;
+    margin: 0 10px;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/vYrZOMM--l-.png);
+    background-repeat: no-repeat;
+    background-size: 22px 560px;
+    background-position: $x $y;
+}
+@mixin mind-footer-item($width, $height, $x, $y, $opacity: 0.8) {
+    width: $width;
+    height: $height;
+    margin: 0 10px;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/qOkDam899PW.png);
+    background-repeat: no-repeat;
+    background-size: 32px 2728px;
+    background-position: $x $y;
+}
+
+.yourmind{
+    width: $post-width;
+    background-color: $post-bg-color;
+    height: $mind-post-height;
+    border-radius: 4px;
+    border: $border;
+
+    >.mind-header{
+        height: $mind-title-height;
+        width: 100%;
+        background-color: $bg-light-gray;
+        border-bottom: $border;
+        display: flex;
+        align-items: center;
+    }
+
+    >.mind-center{
+        height: 72px;
+        display: flex;
+        align-items: center;
+    }
+
+    >.mind-footer{
+        border-top: 1px solid #e9ebee;
+        margin: 0 12px;
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mind-separator {
+    background: rgba(0, 0, 0, .1);
+    width: 1px;
+    height: 14px;
+}
+
+.mind-profile-img{
+    border-radius: 50%;
+    height: 40px;
+    border: $border-black;
+    margin: 0 0 0 12px;
+}
+
+.mind-item{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+
+    &.mind-item-makepost{
+        @include item-image-post(16px, 16px, -0px, -356px);
+        color: $font-color;
+    }
+    &.mind-item-photovideo{
+        @include item-image-post(16px, 16px, -0px, -374px);
+        color: $mind-blue-color;
+    }
+    &.mind-item-livevideo{
+        @include item-image-post(16px, 16px, -0px, -320px);
+        color: $mind-blue-color;
+    }
+}
+
+.mind-form{
+    width: 100%;
+
+    .mind-text{
+        color: grey;
+        font-size: 14px;
+        margin-left: 12px;
+        border: none;
+        overflow: auto;
+        outline: none;
+        border-width: 0;
+        resize: none;
+        font-family: Helvetica, Arial, sans-serif;
+        width: 90%;
+        padding: 0;
+    }
+}
+.mind-footer-item{
+    background: $bg-light-gray;
+    border-radius: 18px;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #4b4f56;
+    height: 32px;
+}
+
+.mind-footer-item-photo{
+    @include mind-footer-item(20px, 20px, -0px, -506px);
+    padding: 8px 0 0 25px;
+}
+.mind-footer-item-feeling{
+    @include mind-footer-item(20px, 20px, -0px, -264px);
+    padding: 8px 0 0 25px;
+}
+.mind-footer-item-dots{
+    @include mind-footer-item(20px, 20px, 0px, -1012px);
+    padding: 8px 0 0 25px;
+}
+
+.post-item{
+    width: $post-width;
+    background-color: $post-bg-color;
+    border-radius: $border-radius;
+    // height: 100px;
+    margin-top: $grid-gap;
+    border: $border;
+
+    .post-profile{
+        display: flex;
+        align-items: center;
+
+        span{
+            padding: 0 10px;
+            color: $bg-blue;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .post-button{
+            height: 15px;
+            padding: 0 2px;
+            cursor: pointer;
+            
+        }
+    }
+
+    .post-profile-img{
+        border-radius: 50%;
+        height: 40px;
+        border: $border-black;
+        margin: 12px 0 0 12px;
+    }
+
+    .post-text{
+        display: flex;
+        flex-direction: column;
+
+        span{
+            margin: 12px;
+        }
+
+        img{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}

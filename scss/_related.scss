@@ -1,0 +1,32 @@
+.related{
+    width: $related-width;
+    height: $mind-post-height;
+}
+
+.aside-item{
+    background-color: $post-bg-color;
+    color: $font-nav-color;
+    font-size: $font-size;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: $border-radius;  
+    display: flex;
+    flex-direction: column;
+    
+    .story>.aside-img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin:0 10px;
+    }
+}
+
+.stories{
+    height: $related-stories-height;
+}
+
+.suggested{
+    // height: $related-suggested-height;
+    margin-top: $grid-gap;
+    overflow: hidden;
+}

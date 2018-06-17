@@ -1,0 +1,35 @@
+// _colors.scss
+$font-nav-color: #616770;
+
+// _sizes.scss
+$sidebar-width: 180px;
+$newsfeed-width: 500px;
+$grid-gap: 12px;
+$content-width: 100%;
+$font-size: 14px;
+
+body {
+  background-color: $bg-gray;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+
+.container{
+  width: $content-width;
+  margin: $grid-gap auto auto auto;
+  top: $header-height;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  // justify-content: space-around;
+}
+
+.content {
+  display: grid;
+  width: calc(100% - $sidebar-width);
+  margin-left: $grid-gap;
+  grid-template-columns: $newsfeed-width 1fr;
+  column-gap: $grid-gap;
+  height: 1000px;
+}

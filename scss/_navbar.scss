@@ -1,0 +1,89 @@
+ @mixin nav-image($width, $height, $x, $y) {
+    // width: $width;
+    height: $height;
+    display: inline-block;
+    padding-left: 25px;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/qYCRD9Uiu0_.png);
+    background-repeat: no-repeat;
+    background-size: 36px 2702px;
+    background-position: $x $y;
+  }
+  
+  .sidebar-div{
+    width: $sidebar-width;
+  }
+  
+  .sidebar {
+    display: block;
+    position: fixed;
+  }
+  
+  .nav-item {
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: $font-color;
+  
+    &.nav-item-title{
+      color: $font-nav-color;
+      padding: 0 15px;
+      font-size: $font-size;
+      font-weight: bold;
+    }
+  }  
+  
+  .nav-profile-img{
+    border-radius: 50%;
+    height: 20px;
+  }
+  
+  .nav-li, .profile {
+    padding: 5px 0;
+    font-size: $font-size;
+    color: $font-color;
+    
+    &:hover {
+      background: rgb(246, 247, 249);
+    }
+  
+    >.nav-item-messenger {
+        @include nav-image(20px, 20px, 0, -1092px);
+    }
+    >.nav-item-newsfeed {
+        @include nav-image(20px, 20px, 0, -1554px);  
+    }
+    >.nav-item-marketplace {
+        @include nav-image(20px, 20px, 0, -1510px);  
+    }
+    >.nav-item-group {
+        @include nav-image(20px, 20px, 0, -1422px);  
+    }
+    >.nav-item-events {
+        @include nav-image(20px, 20px, 0, -1224px);  
+    }
+    >.nav-item-groups {
+        @include nav-image(20px, 20px, 0, -1422px);  
+    }
+    >.nav-item-pages {
+        @include nav-image(20px, 20px, 0, -1554px);  
+    }
+    >.nav-item-saved {
+        @include nav-image(20px, 20px, 0, -1664px);  
+    }
+    >.nav-item-onthisday {
+        @include nav-image(20px, 20px, 0, -1532px);  
+    }
+    >.nav-item-friendlists {
+        @include nav-image(20px, 20px, 0, -1466px);  
+    }
+  }
+  
+  .nav-list{
+    list-style-type: none;
+  }
+  
+  .nav-img{
+    border-radius: 50%;
+    height: $line-height;
+  }
+  
