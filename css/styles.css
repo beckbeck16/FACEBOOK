@@ -1,11 +1,12 @@
-/* line 18, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 18, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .toolbar {
   top: 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
-/* line 24, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 25, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .menu {
   background-color: #4267b2;
   border-bottom: 1px solid #29487d;
@@ -19,13 +20,13 @@
   align-items: center;
 }
 
-/* line 37, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 38, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .left {
   display: flex;
   align-items: center;
 }
 
-/* line 41, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 42, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .logo {
   width: 24px;
   height: 24px;
@@ -40,12 +41,12 @@
   margin: 0;
 }
 
-/* line 13, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 13, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .logo:hover {
   opacity: 0.8;
 }
 
-/* line 46, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 47, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .search-bar {
   box-sizing: border-box;
   height: 26px;
@@ -57,7 +58,7 @@
   display: flex;
 }
 
-/* line 56, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 57, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .search-bar > .search-input {
   height: 25px;
   padding: 0 5px;
@@ -66,7 +67,7 @@
   font-size: 14px;
 }
 
-/* line 64, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 65, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .search-bar > .search-btn {
   width: 20px;
   height: 20px;
@@ -82,22 +83,22 @@
   background-color: #f6f7f9;
 }
 
-/* line 13, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 13, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .search-bar > .search-btn:hover {
   opacity: 0.8;
 }
 
-/* line 70, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 71, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .logo, .social, .login {
   cursor: pointer;
 }
 
-/* line 73, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 74, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .right div:hover, .right [class*='fa-']:hover {
   color: black;
 }
 
-/* line 76, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 77, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .right {
   display: flex;
   align-items: center;
@@ -105,7 +106,7 @@
   overflow: hidden;
 }
 
-/* line 83, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 84, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item {
   display: flex;
   padding: 0 10px;
@@ -116,25 +117,25 @@
   border-radius: 3px;
 }
 
-/* line 92, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 93, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item:not(.header-item--image):hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 96, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 97, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .home {
   color: #fff;
   padding-left: 10px;
   height: 25px;
 }
 
-/* line 101, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 102, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .profile-img {
   border-radius: 50%;
   height: 25px;
 }
 
-/* line 107, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 108, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--friends {
   width: 24px;
   height: 24px;
@@ -148,12 +149,12 @@
   opacity: 0.6;
 }
 
-/* line 13, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 13, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--friends:hover {
   opacity: 0.8;
 }
 
-/* line 110, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 111, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--messeges {
   width: 24px;
   height: 24px;
@@ -167,12 +168,12 @@
   opacity: 0.6;
 }
 
-/* line 13, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 13, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--messeges:hover {
   opacity: 0.8;
 }
 
-/* line 113, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 114, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--notifications {
   width: 24px;
   height: 24px;
@@ -186,12 +187,12 @@
   opacity: 0.6;
 }
 
-/* line 13, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 13, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--notifications:hover {
   opacity: 0.8;
 }
 
-/* line 116, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 117, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--help {
   width: 20px;
   height: 20px;
@@ -205,12 +206,12 @@
   opacity: 0.6;
 }
 
-/* line 13, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 13, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--help:hover {
   opacity: 0.8;
 }
 
-/* line 119, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 120, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--menu {
   width: 13px;
   height: 13px;
@@ -224,26 +225,26 @@
   opacity: 0.6;
 }
 
-/* line 13, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 13, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-item.header-item--menu:hover {
   opacity: 0.8;
 }
 
-/* line 124, C:/Users/IZY/Development/FED/exercises/facebook/scss/_header.scss */
+/* line 125, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_header.scss */
 .header-separator {
   background: rgba(0, 0, 0, 0.1);
   width: 1px;
   height: 18px;
 }
 
-/* line 11, C:/Users/IZY/Development/FED/exercises/facebook/scss/_container.scss */
+/* line 11, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_container.scss */
 body {
   background-color: #e9ebee;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 18, C:/Users/IZY/Development/FED/exercises/facebook/scss/_container.scss */
+/* line 18, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_container.scss */
 .container {
   width: 100%;
   margin: 12px auto auto auto;
@@ -253,7 +254,7 @@ body {
   justify-content: center;
 }
 
-/* line 28, C:/Users/IZY/Development/FED/exercises/facebook/scss/_container.scss */
+/* line 28, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_container.scss */
 .content {
   display: grid;
   width: calc(100% - $sidebar-width);
@@ -263,18 +264,18 @@ body {
   height: 1000px;
 }
 
-/* line 12, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 12, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .sidebar-div {
   width: 180px;
 }
 
-/* line 16, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 16, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .sidebar {
   display: block;
   position: fixed;
 }
 
-/* line 21, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 21, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-item {
   padding: 0 10px;
   cursor: pointer;
@@ -282,7 +283,7 @@ body {
   color: #1d2129;
 }
 
-/* line 27, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 27, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-item.nav-item-title {
   color: #616770;
   padding: 0 15px;
@@ -290,25 +291,25 @@ body {
   font-weight: bold;
 }
 
-/* line 35, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 35, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-profile-img {
   border-radius: 50%;
   height: 20px;
 }
 
-/* line 40, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 40, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li, .profile {
   padding: 5px 0;
   font-size: 14px;
   color: #1d2129;
 }
 
-/* line 45, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 45, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li:hover, .profile:hover {
   background: #f6f7f9;
 }
 
-/* line 49, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 49, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-messenger, .profile > .nav-item-messenger {
   height: 20px;
   display: inline-block;
@@ -319,7 +320,7 @@ body {
   background-position: 0 -1092px;
 }
 
-/* line 52, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 52, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-newsfeed, .profile > .nav-item-newsfeed {
   height: 20px;
   display: inline-block;
@@ -330,7 +331,7 @@ body {
   background-position: 0 -1554px;
 }
 
-/* line 55, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 55, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-marketplace, .profile > .nav-item-marketplace {
   height: 20px;
   display: inline-block;
@@ -341,7 +342,7 @@ body {
   background-position: 0 -1510px;
 }
 
-/* line 58, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 58, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-group, .profile > .nav-item-group {
   height: 20px;
   display: inline-block;
@@ -352,7 +353,7 @@ body {
   background-position: 0 -1422px;
 }
 
-/* line 61, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 61, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-events, .profile > .nav-item-events {
   height: 20px;
   display: inline-block;
@@ -363,7 +364,7 @@ body {
   background-position: 0 -1224px;
 }
 
-/* line 64, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 64, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-groups, .profile > .nav-item-groups {
   height: 20px;
   display: inline-block;
@@ -374,7 +375,7 @@ body {
   background-position: 0 -1422px;
 }
 
-/* line 67, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 67, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-pages, .profile > .nav-item-pages {
   height: 20px;
   display: inline-block;
@@ -385,7 +386,7 @@ body {
   background-position: 0 -1554px;
 }
 
-/* line 70, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 70, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-saved, .profile > .nav-item-saved {
   height: 20px;
   display: inline-block;
@@ -396,7 +397,7 @@ body {
   background-position: 0 -1664px;
 }
 
-/* line 73, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 73, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-onthisday, .profile > .nav-item-onthisday {
   height: 20px;
   display: inline-block;
@@ -407,7 +408,7 @@ body {
   background-position: 0 -1532px;
 }
 
-/* line 76, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 76, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-friendlists, .profile > .nav-item-friendlists {
   height: 20px;
   display: inline-block;
@@ -418,18 +419,18 @@ body {
   background-position: 0 -1466px;
 }
 
-/* line 81, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 81, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-list {
   list-style-type: none;
 }
 
-/* line 85, C:/Users/IZY/Development/FED/exercises/facebook/scss/_navbar.scss */
+/* line 85, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-img {
   border-radius: 50%;
   height: 25px;
 }
 
-/* line 20, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 20, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind {
   width: 500px;
   background-color: white;
@@ -438,7 +439,7 @@ body {
   border: 1px solid #dddfe2;
 }
 
-/* line 27, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 27, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind > .mind-header {
   height: 33px;
   width: 100%;
@@ -448,14 +449,14 @@ body {
   align-items: center;
 }
 
-/* line 36, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 36, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind > .mind-center {
   height: 72px;
   display: flex;
   align-items: center;
 }
 
-/* line 42, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 42, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind > .mind-footer {
   border-top: 1px solid #e9ebee;
   margin: 0 12px;
@@ -464,14 +465,14 @@ body {
   align-items: center;
 }
 
-/* line 51, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 51, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-separator {
   background: rgba(0, 0, 0, 0.1);
   width: 1px;
   height: 14px;
 }
 
-/* line 57, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 57, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-profile-img {
   border-radius: 50%;
   height: 40px;
@@ -479,7 +480,7 @@ body {
   margin: 0 0 0 12px;
 }
 
-/* line 64, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 64, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item {
   font-size: 12px;
   font-weight: bold;
@@ -487,7 +488,7 @@ body {
   cursor: pointer;
 }
 
-/* line 70, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 70, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item.mind-item-makepost {
   width: 16px;
   height: 16px;
@@ -499,7 +500,7 @@ body {
   color: #1d2129;
 }
 
-/* line 74, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 74, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item.mind-item-photovideo {
   width: 16px;
   height: 16px;
@@ -511,7 +512,7 @@ body {
   color: #365899;
 }
 
-/* line 78, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 78, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item.mind-item-livevideo {
   width: 16px;
   height: 16px;
@@ -523,12 +524,12 @@ body {
   color: #365899;
 }
 
-/* line 84, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 84, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-form {
   width: 100%;
 }
 
-/* line 87, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 87, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-form .mind-text {
   color: grey;
   font-size: 14px;
@@ -543,7 +544,7 @@ body {
   padding: 0;
 }
 
-/* line 101, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 101, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item {
   background: #f6f7f9;
   border-radius: 18px;
@@ -556,7 +557,7 @@ body {
   height: 32px;
 }
 
-/* line 113, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 113, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item-photo {
   width: 20px;
   height: 20px;
@@ -568,7 +569,7 @@ body {
   padding: 8px 0 0 25px;
 }
 
-/* line 117, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 117, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item-feeling {
   width: 20px;
   height: 20px;
@@ -580,7 +581,7 @@ body {
   padding: 8px 0 0 25px;
 }
 
-/* line 121, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 121, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item-dots {
   width: 20px;
   height: 20px;
@@ -592,7 +593,7 @@ body {
   padding: 8px 0 0 25px;
 }
 
-/* line 126, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 126, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item {
   width: 500px;
   background-color: white;
@@ -601,13 +602,13 @@ body {
   border: 1px solid #dddfe2;
 }
 
-/* line 134, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 134, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-profile {
   display: flex;
   align-items: center;
 }
 
-/* line 138, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 138, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-profile span {
   padding: 0 10px;
   color: #4267b2;
@@ -615,14 +616,14 @@ body {
   font-size: 14px;
 }
 
-/* line 145, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 145, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-profile .post-button {
   height: 15px;
   padding: 0 2px;
   cursor: pointer;
 }
 
-/* line 153, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 153, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-profile-img {
   border-radius: 50%;
   height: 40px;
@@ -630,30 +631,30 @@ body {
   margin: 12px 0 0 12px;
 }
 
-/* line 160, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 160, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 164, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 164, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text span {
   margin: 12px;
 }
 
-/* line 168, C:/Users/IZY/Development/FED/exercises/facebook/scss/_content.scss */
+/* line 168, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text img {
   width: 100%;
   margin: 0;
 }
 
-/* line 1, C:/Users/IZY/Development/FED/exercises/facebook/scss/_related.scss */
+/* line 1, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_related.scss */
 .related {
   width: 300px;
   height: 155px;
 }
 
-/* line 6, C:/Users/IZY/Development/FED/exercises/facebook/scss/_related.scss */
+/* line 6, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_related.scss */
 .aside-item {
   background-color: white;
   color: #616770;
@@ -665,7 +666,7 @@ body {
   flex-direction: column;
 }
 
-/* line 16, C:/Users/IZY/Development/FED/exercises/facebook/scss/_related.scss */
+/* line 16, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_related.scss */
 .aside-item .story > .aside-img {
   border-radius: 50%;
   height: 50px;
@@ -673,12 +674,12 @@ body {
   margin: 0 10px;
 }
 
-/* line 24, C:/Users/IZY/Development/FED/exercises/facebook/scss/_related.scss */
+/* line 24, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_related.scss */
 .stories {
   height: 182px;
 }
 
-/* line 28, C:/Users/IZY/Development/FED/exercises/facebook/scss/_related.scss */
+/* line 28, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_related.scss */
 .suggested {
   margin-top: 12px;
   overflow: hidden;
