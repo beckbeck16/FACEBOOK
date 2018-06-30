@@ -26,7 +26,11 @@
 }
 
 .suggested{
-    // height: $related-suggested-height;
     margin-top: $grid-gap;
     overflow: hidden;
+
+    img{
+        margin-top: $grid-gap;
+        width: 100%;
+    }
 }

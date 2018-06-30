@@ -254,7 +254,7 @@ body {
   justify-content: center;
 }
 
-/* line 28, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_container.scss */
+/* line 27, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_container.scss */
 .content {
   display: grid;
   width: calc(100% - $sidebar-width);
@@ -273,9 +273,10 @@ body {
 .sidebar {
   display: block;
   position: fixed;
+  width: 180px;
 }
 
-/* line 21, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 22, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-item {
   padding: 0 10px;
   cursor: pointer;
@@ -283,7 +284,7 @@ body {
   color: #1d2129;
 }
 
-/* line 27, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 28, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-item.nav-item-title {
   color: #616770;
   padding: 0 15px;
@@ -291,25 +292,25 @@ body {
   font-weight: bold;
 }
 
-/* line 35, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 36, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-profile-img {
   border-radius: 50%;
   height: 20px;
 }
 
-/* line 40, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 41, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li, .profile {
   padding: 5px 0;
   font-size: 14px;
   color: #1d2129;
 }
 
-/* line 45, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
-.nav-li:hover, .profile:hover {
+/* line 46, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+.nav-li:hover, .nav-li.newsfeed, .profile:hover, .profile.newsfeed {
   background: #f6f7f9;
 }
 
-/* line 49, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 50, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-messenger, .profile > .nav-item-messenger {
   height: 20px;
   display: inline-block;
@@ -320,7 +321,7 @@ body {
   background-position: 0 -1092px;
 }
 
-/* line 52, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 53, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-newsfeed, .profile > .nav-item-newsfeed {
   height: 20px;
   display: inline-block;
@@ -331,7 +332,7 @@ body {
   background-position: 0 -1554px;
 }
 
-/* line 55, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 56, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-marketplace, .profile > .nav-item-marketplace {
   height: 20px;
   display: inline-block;
@@ -342,7 +343,7 @@ body {
   background-position: 0 -1510px;
 }
 
-/* line 58, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 59, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-group, .profile > .nav-item-group {
   height: 20px;
   display: inline-block;
@@ -353,7 +354,7 @@ body {
   background-position: 0 -1422px;
 }
 
-/* line 61, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 62, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-events, .profile > .nav-item-events {
   height: 20px;
   display: inline-block;
@@ -364,7 +365,7 @@ body {
   background-position: 0 -1224px;
 }
 
-/* line 64, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 65, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-groups, .profile > .nav-item-groups {
   height: 20px;
   display: inline-block;
@@ -375,7 +376,7 @@ body {
   background-position: 0 -1422px;
 }
 
-/* line 67, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 68, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-pages, .profile > .nav-item-pages {
   height: 20px;
   display: inline-block;
@@ -386,7 +387,7 @@ body {
   background-position: 0 -1554px;
 }
 
-/* line 70, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 71, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-saved, .profile > .nav-item-saved {
   height: 20px;
   display: inline-block;
@@ -397,7 +398,7 @@ body {
   background-position: 0 -1664px;
 }
 
-/* line 73, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 74, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-onthisday, .profile > .nav-item-onthisday {
   height: 20px;
   display: inline-block;
@@ -408,7 +409,7 @@ body {
   background-position: 0 -1532px;
 }
 
-/* line 76, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 77, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-li > .nav-item-friendlists, .profile > .nav-item-friendlists {
   height: 20px;
   display: inline-block;
@@ -419,18 +420,18 @@ body {
   background-position: 0 -1466px;
 }
 
-/* line 81, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 82, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-list {
   list-style-type: none;
 }
 
-/* line 85, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
+/* line 86, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_navbar.scss */
 .nav-img {
   border-radius: 50%;
   height: 25px;
 }
 
-/* line 20, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 28, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind {
   width: 500px;
   background-color: white;
@@ -439,7 +440,7 @@ body {
   border: 1px solid #dddfe2;
 }
 
-/* line 27, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 35, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind > .mind-header {
   height: 33px;
   width: 100%;
@@ -449,14 +450,14 @@ body {
   align-items: center;
 }
 
-/* line 36, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 44, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind > .mind-center {
   height: 72px;
   display: flex;
   align-items: center;
 }
 
-/* line 42, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 50, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .yourmind > .mind-footer {
   border-top: 1px solid #e9ebee;
   margin: 0 12px;
@@ -465,14 +466,14 @@ body {
   align-items: center;
 }
 
-/* line 51, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 59, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-separator {
   background: rgba(0, 0, 0, 0.1);
   width: 1px;
   height: 14px;
 }
 
-/* line 57, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 65, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-profile-img {
   border-radius: 50%;
   height: 40px;
@@ -481,7 +482,7 @@ body {
   margin: 0 0 0 12px;
 }
 
-/* line 65, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 73, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item {
   font-size: 12px;
   font-weight: bold;
@@ -489,7 +490,7 @@ body {
   cursor: pointer;
 }
 
-/* line 71, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 79, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item.mind-item-makepost {
   width: 16px;
   height: 16px;
@@ -501,7 +502,7 @@ body {
   color: #1d2129;
 }
 
-/* line 75, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 83, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item.mind-item-photovideo {
   width: 16px;
   height: 16px;
@@ -513,7 +514,7 @@ body {
   color: #365899;
 }
 
-/* line 79, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 87, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-item.mind-item-livevideo {
   width: 16px;
   height: 16px;
@@ -525,12 +526,12 @@ body {
   color: #365899;
 }
 
-/* line 85, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 93, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-form {
   width: 100%;
 }
 
-/* line 88, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 96, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-form .mind-text {
   color: grey;
   font-size: 14px;
@@ -545,7 +546,7 @@ body {
   padding: 0;
 }
 
-/* line 102, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 111, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item {
   background: #f6f7f9;
   border-radius: 18px;
@@ -558,7 +559,7 @@ body {
   padding: 10px;
 }
 
-/* line 115, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 124, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item-photo {
   width: 20px;
   height: 20px;
@@ -570,7 +571,7 @@ body {
   padding: 8px 0 0 25px;
 }
 
-/* line 119, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 128, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item-feeling {
   width: 20px;
   height: 20px;
@@ -582,7 +583,7 @@ body {
   padding: 8px 0 0 25px;
 }
 
-/* line 123, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 132, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .mind-footer-item-dots {
   width: 20px;
   height: 20px;
@@ -594,7 +595,7 @@ body {
   padding: 8px 0 0 25px;
 }
 
-/* line 128, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 137, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item {
   width: 500px;
   background-color: white;
@@ -603,28 +604,64 @@ body {
   border: 1px solid #dddfe2;
 }
 
-/* line 136, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 144, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-profile {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding-bottom: 12px;
 }
 
-/* line 140, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
-.post-item .post-profile author {
+/* line 151, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-profile figure {
+  margin: 0;
+  display: flex;
+}
+
+/* line 155, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-profile figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 12px 0 0 0;
+}
+
+/* line 161, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-profile figure figcaption author {
   padding: 0 10px;
   color: #4267b2;
   font-weight: bold;
   font-size: 14px;
 }
 
-/* line 147, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
-.post-item .post-profile .post-button {
+/* line 168, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-profile figure figcaption .post-details {
+  padding: 0 10px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* line 173, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-profile figure figcaption .post-details .post-type-icon::before {
+  content: '\00B7';
+  padding: 8px 5px 0 4px;
+}
+
+/* line 182, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-profile .post-buttons {
+  margin-right: 12px;
+}
+
+/* line 185, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-profile .post-buttons .post-button {
   height: 15px;
   padding: 0 2px;
   cursor: pointer;
+  opacity: 0.7;
 }
 
-/* line 155, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 194, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-profile-img {
   border-radius: 50%;
   height: 40px;
@@ -633,21 +670,138 @@ body {
   margin: 12px 0 0 12px;
 }
 
-/* line 163, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 202, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 167, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 206, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text span {
-  margin: 12px;
+  margin: 0 0 12px 12px;
 }
 
-/* line 171, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 210, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text img {
   width: 100%;
-  margin: 0;
+}
+
+/* line 216, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer {
+  color: #1d2129;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 221, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .post-likes {
+  margin: 10px;
+}
+
+/* line 225, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-likes {
+  width: 16px;
+  height: 16px;
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/L-4iFzthswQ.png);
+  background-repeat: no-repeat;
+  background-size: 20px 1368px;
+  background-position: 0px -804px;
+  padding: 0 0 0 20px;
+  font-weight: normal;
+}
+
+/* line 231, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-buttons {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #e9ebee;
+  margin: 0 12px;
+}
+
+/* line 237, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-buttons span {
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* line 245, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-buttons span:hover {
+  background: #e9ebee;
+}
+
+/* line 251, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-button-like {
+  width: 18px;
+  height: 18px;
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/L-4iFzthswQ.png);
+  background-repeat: no-repeat;
+  background-size: 20px 1368px;
+  background-position: 0px -180px;
+  margin-right: 25px;
+}
+
+/* line 255, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-button-comment {
+  width: 18px;
+  height: 18px;
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/L-4iFzthswQ.png);
+  background-repeat: no-repeat;
+  background-size: 20px 1368px;
+  background-position: 0px -120px;
+  margin-right: 40px;
+}
+
+/* line 259, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-button-share {
+  width: 18px;
+  height: 18px;
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/L-4iFzthswQ.png);
+  background-repeat: no-repeat;
+  background-size: 20px 1368px;
+  background-position: 0px -320px;
+  margin-right: 25px;
+}
+
+/* line 264, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .footer-button {
+  padding: 0 0 0 25px;
+}
+
+/* line 268, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .post-comments {
+  border-top: 1px solid #e9ebee;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* line 273, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .post-comments .footer-comment-img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 0.35px solid #1d2129;
+  margin: 8px 12px 8px 12px;
+}
+
+/* line 281, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .post-comments .footer-comment-text {
+  display: flex;
+  align-items: center;
+  width: 430px;
+}
+
+/* line 287, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .post-footer .post-comments input {
+  border: 1px solid #dddfe2;
+  border-radius: 28px;
+  padding: 0 0 0 12px;
+  height: 32px;
+  outline: none;
+  width: 100%;
 }
 
 /* line 1, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_related.scss */
@@ -685,6 +839,12 @@ body {
 .suggested {
   margin-top: 12px;
   overflow: hidden;
+}
+
+/* line 32, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_related.scss */
+.suggested img {
+  margin-top: 12px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=../css/styles.map */

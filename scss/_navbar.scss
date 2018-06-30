@@ -16,6 +16,7 @@
   .sidebar {
     display: block;
     position: fixed;
+    width: $sidebar-width;
   }
   
   .nav-item {
@@ -42,7 +43,7 @@
     font-size: $font-size;
     color: $font-color;
     
-    &:hover {
+    &:hover, &.newsfeed {
       background: rgb(246, 247, 249);
     }
   

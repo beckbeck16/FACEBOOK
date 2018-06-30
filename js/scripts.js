@@ -30,28 +30,73 @@ class Feed {
         this.createPost(postBody, this.user);
     }
 
-    createPost(postMessage, postAuthor) {
-        let post = new Post(postMessage, postAuthor);
+    createPost(postMessage, postAuthor, postTime, postImage, postLikes) {
+        let post = new Post(postMessage, postAuthor, postTime, postImage, postLikes);
         this.feedEl.insertBefore(post.el, this.feedEl.firstChild);
     }
 }
   
 class Post {
-    constructor(postBody, author) {
+    constructor(postBody, author, postTime, postImage, postLikes) {
+        this.likes = postLikes;
+        this.posttime = postTime;
+        this.author = author;
+        this.text = postBody;
+
         this.el = document.createElement('article');
         this.el.className = 'post-item';
         this.el.innerHTML = `
-            <a class="post-profile">
-                <img class="post-profile-img" 
-                     src=${author.profileimage}></img>
-                <author>${author.fullname}</author>
-                <img class="post-button" id="post-edit" onclick="onEditPost()" src="https://image.flaticon.com/icons/svg/61/61456.svg" alt="">
-                <img class="post-button" id="post-delete" src="https://image.flaticon.com/icons/svg/61/61848.svg" alt="">
-            </a>
-            <div class="post-text">
-                <span>${postBody}</span>
-            </div>`;
-      
+                <a class="post-profile">
+                    <figure>
+                        <img class="post-profile-img" src=${author.profileimage}></img>
+                        <figcaption>
+                            <author>${author.fullname}</author>
+                            <div class="post-details">
+                                <span class="post-time">${postTime}</span>
+                                <span class="post-type-icon">
+                                    <i class="fas fa-globe"></i>
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <div class="post-buttons">
+                        <img class="post-button" id="post-edit" onclick="onEditPost()" src="https://image.flaticon.com/icons/svg/61/61456.svg" alt="">
+                        <img class="post-button" id="post-delete" src="https://image.flaticon.com/icons/svg/61/61848.svg" alt="">
+                    </div>
+                </a>
+                <div class="post-text">
+                    <span>${postBody}</span>
+                </div>
+                <div class="post-footer">
+                    <div class="post-likes">
+                    </div>
+                    <div class="footer-buttons">
+                        <span><a class="footer-button footer-button-like">Like</a></span>
+                        <span><a class="footer-button footer-button-comment">Comment</a></span>
+                        <span><a class="footer-button footer-button-share">Share</a></span>
+                    </div>
+                    <div class="post-comments">
+                        <img class="footer-comment-img" src=${feed.user.profileimage}></img>
+                        <div class="footer-comment-text"><input placeholder="Write a comment..."></input></div>
+                    </div>
+                </div>
+            `;
+
+            if(postImage){
+                let img = this.el.querySelector(".post-text");
+                img.innerHTML = `
+                    <span>${postBody}</span>
+                    <img src="${postImage}"><img>`;
+            }
+
+            let likes = this.el.querySelector(".post-likes");
+            if(postLikes){
+                likes.innerHTML = `<span><a class="footer-likes">${postLikes}</a></span>`;
+                }
+                else{
+                    likes.parentNode.removeChild(likes);
+            }
+
         this.removeButton = this.el.querySelector('#post-delete');
         this.removeButton.addEventListener('click', () => this.remove());
     }
@@ -68,7 +113,11 @@ fetch('http://127.0.0.1:3000')
     data.json()
       .then((res) => {
         res.posts.forEach(element => {
-          feed.createPost(element.message,  new User(element.firstname, element.lastname, element.userimage));
+          feed.createPost(element.message,  
+                          new User(element.firstname, element.lastname, element.userimage),
+                          element.time,
+                          element.postimage,
+                          element.likes);
         });
       });
   });

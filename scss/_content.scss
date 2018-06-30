@@ -16,6 +16,14 @@
     background-size: 32px 2728px;
     background-position: $x $y;
 }
+@mixin post-footer-item($width, $height, $x, $y, $opacity: 0.8) {
+    width: $width;
+    height: $height;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/L-4iFzthswQ.png);
+    background-repeat: no-repeat;
+    background-size: 20px 1368px;
+    background-position: $x $y;
+}
 
 .yourmind{
     width: $post-width;
@@ -99,6 +107,7 @@
         padding: 0;
     }
 }
+
 .mind-footer-item{
     background: $bg-light-gray;
     border-radius: 18px;
@@ -129,26 +138,56 @@
     width: $post-width;
     background-color: $post-bg-color;
     border-radius: $border-radius;
-    // height: 100px;
     margin-top: $grid-gap;
     border: $border;
 
     .post-profile{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding-bottom: 12px;
+        
+        figure{
+            margin: 0;
+            display: flex;
 
-        author{
-            padding: 0 10px;
-            color: $bg-blue;
-            font-weight: bold;
-            font-size: 14px;
+            figcaption{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 12px 0 0 0;
+
+                author{
+                    padding: 0 10px;
+                    color: $bg-blue;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+
+                .post-details{
+                    padding: 0 10px;
+                    font-size: 12px;
+                    opacity: 0.7;
+
+                    .post-type-icon::before
+                    {
+                        content:'\00B7';
+                        padding:8px 5px 0 4px;
+                    }
+                }
+            }
         }
 
-        .post-button{
-            height: 15px;
-            padding: 0 2px;
-            cursor: pointer;
-            
+        .post-buttons{
+            margin-right: 12px;
+
+            .post-button{
+                height: 15px;
+                padding: 0 2px;
+                cursor: pointer;
+                opacity: 0.7;
+            }
         }
     }
 
@@ -165,12 +204,94 @@
         flex-direction: column;
 
         span{
-            margin: 12px;
+            margin: 0 0 12px 12px;
         }
 
         img{
             width: 100%;
-            margin: 0;
+            // margin: 6px 0 0 0;
+        }
+    }
+
+    .post-footer{
+        color: $font-color;
+        font-size: 14px;
+        font-weight: bold;
+
+        .post-likes{
+            margin: 10px;
+        }
+        
+        .footer-likes{
+            @include post-footer-item(16px, 16px, 0px, -804px);
+            padding: 0 0 0 20px;
+            font-weight: normal;
+        }
+
+        .footer-buttons{
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #e9ebee;
+            margin: 0 12px;
+            
+            span{
+                display: flex;
+                height: 32px;
+                justify-content: center;
+                align-items: center;
+                white-space: nowrap;
+                width: 100%;
+
+                &:hover {
+                    background: $bg-gray;
+                }
+            }
+        }
+
+        .footer-button-like{
+            @include post-footer-item(18px, 18px, 0px, -180px);
+            margin-right: 25px;
+        }
+        .footer-button-comment{
+            @include post-footer-item(18px, 18px, 0px, -120px);
+            margin-right: 40px;
+        }
+        .footer-button-share{
+            @include post-footer-item(18px, 18px, 0px, -320px);
+            margin-right: 25px;
+        }
+
+        .footer-button{
+            padding: 0 0 0 25px;
+        }
+
+        .post-comments{
+            border-top: 1px solid #e9ebee;
+            display: flex;
+            justify-content: flex-start;
+
+            .footer-comment-img{
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                border: $border-black;
+                margin: 8px 12px 8px 12px;
+            }
+
+            .footer-comment-text{
+                display: flex;
+                align-items: center;
+                width: 430px;
+            }
+
+            input{
+                border: 1px solid #dddfe2;
+                border-radius: 28px;
+                padding: 0 0 0 12px;
+                height: 32px;
+                outline: none;
+                width: 100%;
+            }
         }
     }
 }
