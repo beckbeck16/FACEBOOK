@@ -47,7 +47,7 @@ let app = http.createServer((req, res) => {
         userimage: "https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-1/p40x40/26992702_10213578644514950_3193940428532612544_n.jpg?_nc_cat=0&oh=d6af27545c83f67f741a4458ef48fe85&oe=5BBBA7C2",
         message: "I ate apple today",
         likes: 50,
-        time: "15:55",
+        time: "15:08",
         postimage: "https://www.islands.com/sites/islands.com/files/styles/380_4x3/public/islands-homepage-grid-beach.jpg?itok=MFnibsJe"
       },
       {
@@ -56,7 +56,7 @@ let app = http.createServer((req, res) => {
         userimage: "http://www.parisfans.fr/wp-content/uploads/2015/07/Mercato-Ronaldo-aurait-fix%C3%A9-sa-condition-pour-rejoindre-le-PSG.jpg",
         message: "Good bye world cup 2018 too",
         likes: 10,
-        time: "15:08"
+        time: "15:55"
       }
     ]
   };

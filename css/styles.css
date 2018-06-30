@@ -671,34 +671,42 @@ body {
 }
 
 /* line 202, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+.post-item .edit-post-text {
+  outline: none;
+  margin: 0 0 12px 12px;
+  border: none;
+  width: 476px;
+}
+
+/* line 209, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 206, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 213, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text span {
   margin: 0 0 12px 12px;
 }
 
-/* line 210, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 217, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-text img {
   width: 100%;
 }
 
-/* line 216, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 223, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer {
   color: #1d2129;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 221, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 228, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .post-likes {
   margin: 10px;
 }
 
-/* line 225, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 232, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-likes {
   width: 16px;
   height: 16px;
@@ -710,7 +718,7 @@ body {
   font-weight: normal;
 }
 
-/* line 231, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 238, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-buttons {
   display: flex;
   justify-content: space-around;
@@ -718,7 +726,7 @@ body {
   margin: 0 12px;
 }
 
-/* line 237, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 244, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-buttons span {
   display: flex;
   height: 32px;
@@ -728,12 +736,12 @@ body {
   width: 100%;
 }
 
-/* line 245, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 252, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-buttons span:hover {
   background: #e9ebee;
 }
 
-/* line 251, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 258, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-button-like {
   width: 18px;
   height: 18px;
@@ -744,7 +752,7 @@ body {
   margin-right: 25px;
 }
 
-/* line 255, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 262, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-button-comment {
   width: 18px;
   height: 18px;
@@ -755,7 +763,7 @@ body {
   margin-right: 40px;
 }
 
-/* line 259, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 266, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-button-share {
   width: 18px;
   height: 18px;
@@ -766,19 +774,19 @@ body {
   margin-right: 25px;
 }
 
-/* line 264, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 271, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .footer-button {
   padding: 0 0 0 25px;
 }
 
-/* line 268, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 275, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .post-comments {
   border-top: 1px solid #e9ebee;
   display: flex;
   justify-content: flex-start;
 }
 
-/* line 273, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 280, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .post-comments .footer-comment-img {
   border-radius: 50%;
   height: 30px;
@@ -787,14 +795,14 @@ body {
   margin: 8px 12px 8px 12px;
 }
 
-/* line 281, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 288, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .post-comments .footer-comment-text {
   display: flex;
   align-items: center;
   width: 430px;
 }
 
-/* line 287, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
+/* line 294, C:/Users/IZY/Documents/GitHub/FACEBOOK/scss/_content.scss */
 .post-item .post-footer .post-comments input {
   border: 1px solid #dddfe2;
   border-radius: 28px;

@@ -199,6 +199,13 @@
         margin: 12px 0 0 12px;
     }
 
+    .edit-post-text{
+        outline: none;
+        margin: 0 0 12px 12px;
+        border: none;
+        width: $post-width - 24px;
+    }
+
     .post-text{
         display: flex;
         flex-direction: column;
