@@ -1,8 +1,7 @@
 <html>
 <head>
     <title>Facebook</title>
-    <link rel="icon" href="http://example.com/favicon.png">
-    <script src="js/scripts.js"></script>
+    <link rel="icon" href="img/facebookIcon.ico">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 </head>
@@ -102,7 +101,8 @@
                 </div>
                 <div class="mind-center">
                     <img class="mind-profile-img" src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-1/p40x40/26992702_10213578644514950_3193940428532612544_n.jpg?_nc_cat=0&oh=d6af27545c83f67f741a4458ef48fe85&oe=5BBBA7C2"></img>
-                    <form class="mind-form" action="#" onSubmit="onCreatePost()">
+                    <form id="mind-form" class="mind-form" action="#">
+                    <!-- <form id="mind-form" class="mind-form" action="#" onSubmit="onCreatePost()"> -->
                         <input class="mind-text" id="post-text" placeholder="What's on yout mind, Becky?"></input>
                     </form>
                 </div>
@@ -119,18 +119,6 @@
                 </div>
             </div>
             <div class="posts" id="posts-area">
-                <div class="post-item">
-                        <a class="post-profile">
-                            <img class="post-profile-img" src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-1/p40x40/26992702_10213578644514950_3193940428532612544_n.jpg?_nc_cat=0&oh=d6af27545c83f67f741a4458ef48fe85&oe=5BBBA7C2"></img>
-                            <span>Becky Hosgun</span>
-                            <img class="post-button" id="post-edit" onclick="onEditPost()" src="https://image.flaticon.com/icons/svg/61/61456.svg" alt="">
-                            <img class="post-button" id="post-delete" onclick="onDeletePost()" src="https://image.flaticon.com/icons/svg/61/61848.svg" alt="">
-                        </a>
-                        <div class="post-text">
-                            <span>Hello world</span>
-                            <img src="https://www.islands.com/sites/islands.com/files/styles/380_4x3/public/islands-homepage-grid-beach.jpg?itok=MFnibsJe" alt="">
-                        </div>
-                </div>
             </div>
         </div>
         <aside class="related">
@@ -158,5 +146,6 @@
         </aside>
     </main>
 </div>
+<script src="js/scripts.js"></script>
 </body>
 </html>
