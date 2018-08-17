@@ -1,0 +1,153 @@
+import $ from "jquery";
+// import "/css/styles.css";
+// import './app.css';
+
+import './../css/styles.css';
+import UserService from "./userService.js";
+import PostsService from "./postsService.js";
+import Feed from './feed.js';
+
+$( "body" ).append(`
+<div class="toolbar">
+    <div class="menu">
+        <div class="left">
+            <div class="logo"></div>
+            <form class="search-bar">
+                <input id="search" type="search" class="search-input" Placeholder="Search"/>
+                <span class="search-btn"></span> 
+            </form>
+        </div>
+        <div class="right">
+            <a class="header-item header-profile">
+                <img class="header-item header-item--image profile-img" src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-1/p40x40/26992702_10213578644514950_3193940428532612544_n.jpg?_nc_cat=0&oh=d6af27545c83f67f741a4458ef48fe85&oe=5BBBA7C2"></img>
+                Becky
+            </a>
+            <div class="header-separator"></div>
+            <a class="header-item home">Home</a>
+            <div class="header-separator"></div>
+            <a class="header-item header-item--image header-item--friends"></a>
+            <a class="header-item header-item--image header-item--messeges"></a>
+            <a class="header-item header-item--image header-item--notifications"></a>
+            <div class="header-separator"></div>
+            <a class="header-item header-item--image header-item--help"></a>
+            <a class="header-item header-item--image header-item--menu"></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="sidebar-div">
+        <nav class="sidebar">
+            <div class="nav-item">
+                <a class="profile">
+                    <img class="nav-profile-img" src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-1/p40x40/26992702_10213578644514950_3193940428532612544_n.jpg?_nc_cat=0&oh=d6af27545c83f67f741a4458ef48fe85&oe=5BBBA7C2"></img>
+                    Becky Hosgun
+                </a>
+            </div>
+            <ul class="nav-item nav-list">
+                <li class="nav-li newsfeed"> 
+                    <a class="nav-item-newsfeed">News Feed</a>        
+                </li>
+                <li class="nav-li messenger">
+                    <a class="nav-item-messenger">Messenger</a>  
+                </li>
+                <li class="nav-li marketplace">
+                    <a class="nav-item-marketplace">Marketplace</a> 
+                </li>
+            </ul>
+            
+            <a class="nav-item nav-item-title shortcuts">Shortcuts</a>
+            <ul class="nav-item nav-list">
+                <li class="nav-li group"> 
+                    <a class="nav-item-group">צעירי רמת גן</a>        
+                </li>
+                <li class="nav-li group">
+                    <a class="nav-item-group">באות</a>  
+                </li>
+                <li class="nav-li group">
+                    <a class="nav-item-group">אמהות מבשלות</a> 
+                </li>
+            </ul>
+
+            <a class="nav-item nav-item-title explore">Explore</a>
+            <ul class="nav-item nav-list">
+                <li class="nav-li events"> 
+                    <a class="nav-item-events">Events</a>        
+                </li>
+                <li class="nav-li groups">
+                    <a class="nav-item-groups">Groups</a>  
+                </li>
+                <li class="nav-li pages">
+                    <a class="nav-item-pages">Pages</a> 
+                </li>
+                <li class="nav-li saved">
+                    <a class="nav-item-saved">Saved</a> 
+                </li>
+                <li class="nav-li onthisday">
+                   <a class="nav-item-onthisday">On this day</a> 
+                </li> 
+                <li class="nav-li friendlists">
+                   <a class="nav-item-friendlists">Friend lists</a> 
+                </li> 
+            </ul>
+        </nav>
+    </div>
+    <main class="content">
+        <div class="newsfeed">
+            <div class="yourmind">
+                <div class="mind-header">
+                   <span><a class="mind-item mind-item-makepost">Make Post</a></span> 
+                    <div class="mind-separator"></div>
+                    <span><a class="mind-item mind-item-photovideo">Photo/Video Album</a></span>
+                    <div class="mind-separator"></div>
+                    <span><a class="mind-item mind-item-livevideo">Live Video</a></span> 
+                </div>
+                <div class="mind-center">
+                    <img class="mind-profile-img" src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.0-1/p40x40/26992702_10213578644514950_3193940428532612544_n.jpg?_nc_cat=0&oh=d6af27545c83f67f741a4458ef48fe85&oe=5BBBA7C2"></img>
+                    <form id="mind-form" class="mind-form" action="#">
+                        <input class="mind-text" id="post-text" placeholder="What's on yout mind, Becky?"></input>
+                    </form>
+                </div>
+                <div class="mind-footer">
+                    <div class="mind-footer-item">
+                        <a class="mind-footer-item-photo">Photo/Video</a>
+                    </div>
+                    <div class="mind-footer-item">
+                      <span><a class="mind-footer-item-feeling">Feeling/Activity</a></span>
+                    </div>
+                    <div class="mind-footer-item">
+                        <a class="mind-footer-item-dots"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts" id="posts-area">
+            </div>
+        </div>
+        <aside class="related">
+            <div class="aside-item stories">
+                Stories
+                <div class="aside-item">
+                        <a class="story">
+                            <img class="aside-img" src="data:image/jpeg;base64,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"></img>
+                           <span> Add to Your Story</span>
+                        </a>
+                        <a class="story">
+                            <img class="aside-img" src="https://cdn.images.express.co.uk/img/dynamic/67/590x/Barcelona-news-team-Lionel-Messi-885979.jpg"></img>
+                           <span> Leonel Messi</span>
+                        </a>
+                        <a class="story">
+                            <img class="aside-img" src="http://www.parisfans.fr/wp-content/uploads/2015/07/Mercato-Ronaldo-aurait-fix%C3%A9-sa-condition-pour-rejoindre-le-PSG.jpg"></img>
+                            <span>Cristiano Ronaldo</span>
+                        </a>
+                </div>
+            </div>
+            <div class="aside-item suggested">
+                <span>Suggested Pages</span>
+                <img src="img/sponsered2.png" alt="">
+            </div>   
+        </aside>
+    </main>
+</div>`);
+
+let mainEl = document.querySelector('newsfeed');
+new Feed(mainEl);
+
